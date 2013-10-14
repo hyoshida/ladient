@@ -3,6 +3,13 @@
 [&autoinsert target="linehead" command="onlinehead"]
 [&autoinsert target="lineend" command="onlineend"]
 
+[chgmsg id=""]
+  [scetween mode="init" type="in"]
+  [scetween mode="add" type="in" param="alpha" ease="none" diff="-255" msec="400" delay="$g.msg.speed * g.mspeed0"]
+  [scetween mode="init" type="out"]
+  [scetween mode="add" type="out" param="alpha" ease="none" diff="-255" msec="0" delay="0"]
+[/chgmsg]
+
 \Hello world.
 
 [レデ]
