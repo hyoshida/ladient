@@ -1,0 +1,29 @@
+*onblankline
+[var name="talker" data="none"]
+[chgmsg id="name"]
+  // キャラ名はバックログに格納しない
+  [rp backlog="0"]
+[/chgmsg]
+[rp]
+[return]
+
+*onlinehead
+[if estimate="$talker == 'none'"]
+  // 直前がキャラ名でない場合は一行空ける
+  [rt]
+[/if]
+[return]
+
+*onlineend
+@
+[rt]
+[return]
+
+*レデ
+[var name="talker" data="レデ"]
+[chgmsg id="name"]
+  [rp]
+  [print data="$'【' + talker + '】'"]
+[/chgmsg]
+[rt]
+[return]

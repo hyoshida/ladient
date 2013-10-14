@@ -1,12 +1,12 @@
 [debug mode="1" level="2"]
+[&autoinsert target="blankline" command="onblankline"]
+[&autoinsert target="linehead" command="onlinehead"]
+[&autoinsert target="lineend" command="onlineend"]
 
+\Hello world.
 
-\Hello world.@[rp]
+[レデ]
+「はじめまして！」
 
-
-【レデ】[rt]
-「はじめまして！」@[rp]
-
-
-【レデ】[rt]
-「わたしはレデです」@[rp]
+[レデ]
+「わたしはレデです」
